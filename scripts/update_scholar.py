@@ -77,7 +77,18 @@ def via_serpapi():
 
 
 def via_scholarly():
-    """Return (metrics dict, publications list) using the scholarly package."""
+    """Return (metrics dict, publications list) using the scholarly package.
+
+    Google Scholar usually blocks GitHub's servers, and scholarly then keeps
+    retrying for a long time, so give up after two minutes.
+    """
+    import signal
+
+    def give_up(*_):
+        raise TimeoutError("Google Scholar did not respond within 2 minutes (probably blocked)")
+    if hasattr(signal, "SIGALRM"):
+        signal.signal(signal.SIGALRM, give_up)
+        signal.alarm(120)
     from scholarly import scholarly, ProxyGenerator
     if os.environ.get("USE_FREE_PROXIES") == "1":
         pg = ProxyGenerator()
@@ -85,6 +96,8 @@ def via_scholarly():
             scholarly.use_proxy(pg)
     author = scholarly.search_author_id(SCHOLAR_ID)
     author = scholarly.fill(author, sections=["basics", "indices", "counts", "publications"])
+    if hasattr(signal, "SIGALRM"):
+        signal.alarm(0)
     pubs = [{
         "title": p.get("bib", {}).get("title", ""),
         "year": p.get("bib", {}).get("pub_year"),
@@ -109,7 +122,8 @@ def main() -> int:
             print("Using SerpAPI.")
             metrics, pubs = via_serpapi()
         else:
-            print("No SERPAPI_KEY secret found; trying scholarly (often blocked on GitHub).")
+            print("No SERPAPI_KEY secret found. Add it in Settings > Secrets and variables > Actions.")
+            print("Trying scholarly instead (often blocked on GitHub).")
             metrics, pubs = via_scholarly()
     except Exception as exc:
         print(f"Could not fetch Google Scholar profile ({exc!r}); keeping previous data.")
