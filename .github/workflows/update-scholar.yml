@@ -11,7 +11,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v5
 
@@ -19,16 +19,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install scholarly
-        run: pip install scholarly "bibtexparser<2"   # scholarly breaks with bibtexparser 2.x
-
       - name: Fetch metrics from Google Scholar
-        timeout-minutes: 5
         env:
           SCHOLAR_ID: TmDD6z8AAAAJ
-          # Free key from serpapi.com, saved in Settings → Secrets and variables → Actions
+          # Free key from serpapi.com, saved in Settings > Secrets and variables > Actions
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
-          USE_FREE_PROXIES: "0"
         run: python scripts/update_scholar.py
 
       - name: Commit if anything changed
