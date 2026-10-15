@@ -1,0 +1,122 @@
+{
+  "name": "Zulfiqar Ahmad Khan",
+  "position": "Postdoctoral Fellow (WASP)",
+  "department": "Department of Computing Science",
+  "institution": "Umeå University, Sweden",
+  "email": "zulfiqar.khan@umu.se",
+  "phone": "+46 76 970 43 40",
+  "photo": "assets/photo.jpg",
+  "cv_pdf": "files/CV_Zulfiqar_Ahmad_Khan.pdf",
+  "resume_pdf": "files/Resume_Zulfiqar_Ahmad_Khan.pdf",
+
+  "links": [
+    { "label": "Google Scholar", "icon": "scholar",  "url": "https://scholar.google.com/citations?user=TmDD6z8AAAAJ" },
+    { "label": "ORCID",          "icon": "orcid",    "url": "https://orcid.org/0000-0003-3797-9649" },
+    { "label": "ResearchGate",   "icon": "rg",       "url": "" },
+    { "label": "Umeå University","icon": "uni",      "url": "https://www.umu.se/en/staff/zulfiqar-khan/" },
+    { "label": "GitHub",         "icon": "code",     "url": "" },
+    { "label": "LinkedIn",       "icon": "person",   "url": "" },
+    { "label": "Email",          "icon": "mail",     "url": "mailto:zulfiqar.khan@umu.se" }
+  ],
+
+  "bio": [
+    "I am a researcher in AI and deep learning, focusing on computer vision, energy forecasting, edge and resource-efficient AI, and federated learning.",
+    "I am currently a postdoctoral researcher in the Department of Computing Science at Umeå University, Sweden, through the Wallenberg AI, Autonomous Systems and Software Program (WASP), where I contribute to research projects, co-supervise PhD students, and support research team coordination.",
+    "During my PhD at Sejong University, I served as Coordinator of the Intelligent Media Laboratory (IMLab), leading a research team of eight members and contributing to research projects, publications, project proposals, and student supervision."
+  ],
+
+  "interests": [
+    "Computer Vision", "Energy Forecasting", "Edge & Resource-Efficient AI", "Federated Learning",
+    "Spiking Neural Networks", "Open-Set Recognition", "Anomaly Detection", "Fire Detection"
+  ],
+
+  "metrics": [
+    { "value": "3000+", "label": "Citations" },
+    { "value": "25",    "label": "h-index" },
+    { "value": "30+",   "label": "i10-index" },
+    { "value": "49",    "label": "Publications" },
+    { "value": "14",    "label": "First-author papers" },
+    { "value": "6",     "label": "Korean patents" }
+  ],
+
+  "education": [
+    { "dates": "Sep 2019 – Feb 2025", "title": "Joint Master's and Ph.D.", "org": "Department of Software, Sejong University, Seoul, South Korea",
+      "detail": "Thesis: A Study of Spatiotemporal Feature Analysis using Deep Hybrid Models for Power Forecasting",
+      "detail_url": "https://dl.nanet.go.kr/SearchDetailView.do?sysid=openapi&cn=KDMT12025000018423" },
+    { "dates": "Sep 2016 – Aug 2018", "title": "M.Sc. in Computer Science", "org": "Islamia College Peshawar, Pakistan",
+      "detail": "Thesis: Towards Smart Home Automation using IoT-enabled Edge-Computing Paradigm",
+      "extra_link": { "label": "DIPLab Prototype", "url": "https://www.youtube.com/watch?v=XDcYgB774C0" } },
+    { "dates": "Aug 2014 – Aug 2016", "title": "B.Sc. in Computer Science", "org": "University of Malakand, Dir Lower, Khyber Pakhtunkhwa, Pakistan" }
+  ],
+
+  "experience": [
+    { "dates": "May 2025 – present", "title": "Postdoctoral Researcher (WASP)", "org": "Department of Computing Science, Umeå University, Sweden",
+      "bullets": [
+        "Researching and implementing open-set recognition methods for computer vision.",
+        "Designing vision transformer architectures with spiking neural networks for energy-efficient visual processing.",
+        "Developing federated learning pipelines for privacy-preserving computer vision on edge devices.",
+        "Developing efficient algorithms for real-time fire detection.",
+        "Co-supervising PhD students and mentoring students in research ideation, algorithm implementation, and manuscript preparation."
+      ] },
+    { "dates": "Mar 2025 – Apr 2025", "title": "Postdoctoral Researcher", "org": "BrainAI Lab, Kyungpook National University, Daegu, South Korea",
+      "bullets": [
+        "Developed deep learning models for short-term energy forecasting and smart-grid optimization.",
+        "Conducted experiments and evaluated model performance for energy forecasting applications."
+      ] },
+    { "dates": "Jul 2024 – Mar 2025", "title": "IMLab Coordinator", "org": "Sejong University, Seoul, South Korea",
+      "bullets": [
+        "Led a research team of eight members working on energy informatics, computer vision, and signal processing.",
+        "Co-supervised Master's and PhD students on research planning, algorithm development, experimentation, and manuscript preparation.",
+        "Contributed to multi-year research proposals submitted to the National Research Foundation of Korea (NRF)."
+      ] },
+    { "dates": "Sep 2019 – Jun 2024", "title": "Research Assistant", "org": "Intelligent Media Laboratory, Sejong University, Seoul, South Korea",
+      "bullets": [
+        "Conducted research and development across multiple projects, contributing to algorithm development, experimentation, and publications.",
+        "Implemented research methods and prototypes and evaluated their performance."
+      ] },
+    { "dates": "Mar 2017 – Aug 2019", "title": "Research Assistant", "org": "Digital Image Processing Laboratory, Islamia College Peshawar, Pakistan",
+      "bullets": [
+        "Supervised bachelor-level research projects in energy informatics, computer vision, and signal processing.",
+        "Prepared research project proposals to support funding applications and laboratory initiatives."
+      ] }
+  ],
+
+  "projects": [
+    { "dates": "May 2025 – present", "title": "Wallenberg AI, Autonomous Systems and Software Program (WASP)", "org": "Knut and Alice Wallenberg Foundation", "url": "https://wasp-sweden.org/" },
+    { "dates": "Mar 2025 – Apr 2025", "title": "Brain-Inspired AI Application", "org": "NRF and IITP, South Korea" },
+    { "dates": "Sep 2024 – Feb 2025", "title": "Materials Synthesis Data Hub", "org": "National Research Foundation of Korea (NRF)" },
+    { "dates": "Apr 2024 – Dec 2024", "title": "AI Policy Simulation for Population-Declining Regions", "org": "IITP, South Korea" },
+    { "dates": "Mar 2023 – Feb 2025", "title": "Anomaly Detection for Accident Prevention", "org": "National Research Foundation of Korea (NRF)" },
+    { "dates": "Oct 2019 – Dec 2023", "title": "Ensemble Learning and XAI for Energy Analysis", "org": "National Research Foundation of Korea (NRF)" }
+  ],
+
+  "awards": [
+    { "dates": "Feb 2025", "title": "Outstanding Researcher Award", "org": "Sejong University, Seoul, South Korea" },
+    { "dates": "Sep 2023", "title": "Best Paper Award", "org": "Next Generation Computing Conference, Jeju, South Korea" },
+    { "dates": "Sep 2019", "title": "Full Scholarship, Joint Master's and Ph.D. Program", "org": "Sejong University, Seoul, South Korea" },
+    { "dates": "Aug 2019", "title": "Winner, Business Plan Competition", "org": "ORIC, Islamia College Peshawar, Pakistan" },
+    { "dates": "Dec 2019", "title": "Full Scholarship, M.Sc. in Computer Science", "org": "Islamia College Peshawar, Pakistan" }
+  ],
+
+  "recognition": [
+    { "dates": "2024 – 2025", "title": "Top 2% Scientist", "org": "Updated Science-Wide Author Databases of Standardized Citation Indicators",
+      "links": [
+        { "label": "2024", "url": "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/7" },
+        { "label": "2025", "url": "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/8" },
+        { "label": "2026", "url": "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/9" } ] },
+    { "dates": "2021 – 2025", "title": "Scholarly Index Research Rankings", "org": "Fire Detection: world rank 14 of 2,458 (top 0.57%) · Energy Load & Power Forecasting: top 1.4% · Solar Radiation & Photovoltaics: top 2.1%",
+      "links": [ { "label": "source", "url": "https://scholarlyindex.com/scholars/SI-f3ebf1d7aa30bc4936d246d629fd3322" } ] }
+  ],
+
+  "skills": [
+    { "label": "Programming", "value": "Python, C++, PHP" },
+    { "label": "Deep learning", "value": "PyTorch, TensorFlow, Keras" },
+    { "label": "Computer vision", "value": "OpenCV, scikit-image, Pillow" },
+    { "label": "Data analysis", "value": "Pandas, NumPy, Matplotlib, Seaborn; time-series analysis, regression models" },
+    { "label": "ML methods", "value": "Supervised and unsupervised learning, active, incremental and federated learning" },
+    { "label": "IoT & databases", "value": "MQTT, Raspberry Pi, Arduino; MySQL, SQLite" },
+    { "label": "Tools", "value": "Git, GitHub, Jupyter, MATLAB Simulink, LaTeX" }
+  ],
+
+  "service": "60+ peer reviews for IEEE Transactions on Cybernetics, IEEE Transactions on Industrial Informatics, Engineering Applications of Artificial Intelligence, Knowledge-Based Systems, Information Processing and Management, Artificial Intelligence Review, Cluster Computing, Energy Efficiency, Scientific Reports, IET journals and others."
+}
